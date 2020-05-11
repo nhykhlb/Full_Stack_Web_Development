@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhykhlb/Bootstrp.git"
+  },
+  "author": "Abhishek Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhykhlb/Bootstrp/issues"
+  },
+  "homepage": "https://github.com/nhykhlb/Bootstrp#readme"
+}
