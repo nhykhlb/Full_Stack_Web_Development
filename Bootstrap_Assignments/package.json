@@ -2,9 +2,9 @@
   "name": "bootstrap_assignments",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "aboutus.html",
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.5.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
   },
