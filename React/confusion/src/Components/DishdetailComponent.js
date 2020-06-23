@@ -7,10 +7,10 @@ import {Link} from 'react-router-dom';
                 return(
                     <div key={comments.id} className="list-unstyled">
                         <p>{comments.comment}</p>
-                <p>--{comments.author},{"  "}
+                <blockquote>--{comments.author},{"  "}
                 <Moment date={comments.date} format="MMMM DD,YYYY" />
                      
-                </p>
+                </blockquote>
                     </div>
                 );
             }
@@ -18,12 +18,12 @@ import {Link} from 'react-router-dom';
         
         if(dish != null){
             return(
-                        <Card key={dish.id}>
-                            <CardImg width="100%" src={dish.image} alt={dish.name} />
-                                <CardBody>
-                                    <CardTitle>
+                        <Card key={dish.id} className="p-2">
+                            <CardTitle color="primary">
                                         {dish.name}
                                     </CardTitle>
+                            <CardImg width="100%" src={dish.image} alt={dish.name} />
+                                <CardBody>
                                     <CardText>
                                         {dish.description}
                                     </CardText>
@@ -52,9 +52,13 @@ import {Link} from 'react-router-dom';
              <hr />
              </div>
                 <div className="row">
-                    <RenderDish dish = {props.dish}/>
-                    <RenderComment comments = {props.comments}/>
-                </div>
+                    <div className="col-md-6 p-3">
+                        <RenderDish dish = {props.dish}/>
+                    </div>
+                    <div className="col-md-6" id="comment">
+                        <RenderComment comments = {props.comments}/>
+                    </div>
+               </div>
             </div>
         );
     } 

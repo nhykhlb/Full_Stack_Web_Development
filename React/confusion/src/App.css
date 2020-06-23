@@ -31,7 +31,6 @@ address{
 .navbar-dark {
     background-color: #512DA8;
 }
-.nav-item{
-    text-align: center;
-    border-bottom:1px solid black
+body{
+    background-color:whitesmoke;
 }

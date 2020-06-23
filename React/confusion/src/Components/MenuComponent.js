@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card,CardImg,CardImgOverlay,CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
+// import {Transition} from 'react-spring/renderprops'
 
 function RenderMenuItem({dish}) {
 
@@ -21,13 +22,13 @@ return(
 
         const menu = props.dishes.map((dish) => {
             return (
-              <div key={dish.id} className="col-12 col-md-5 m-1">
+              <div key={dish.id} className="col-12 col-md-6 mb-4">
                 <RenderMenuItem dish = {dish}/>
               </div>
             );
         });
 
-
+        // const style = useSpring({opacity: 1, from: {opacity: 0}})
         return (
           <div className="container">
             <div className="row">
@@ -40,9 +41,10 @@ return(
               <h3>Menu</h3>
               <hr/>
             </div>
-            <div className="row">
+            
+              <div className="row" id="menu" >
                   {menu}
-            </div>
+              </div>
             
           </div>
         );

@@ -65,7 +65,7 @@ function About(props) {
                 </div>
                 <div className="col-12">
                     <Card>
-                        <CardBody className="bg-faded">
+                        <CardBody className="bg-faded text-center">
                             <blockquote className="blockquote">
                                 <p className="mb-0">You better cut the pizza in four pieces because
                                     I'm not hungry enough to eat six.</p>
