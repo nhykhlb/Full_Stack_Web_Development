@@ -7,7 +7,7 @@ import About from './AboutComponent';
 import Contact from './ContactComponent'
 import DishDetail from './DishdetailComponent'
 import { Switch,Route, Redirect, withRouter } from 'react-router-dom';
-import {connect} from 'react-redux';
+import {Connect} from 'react-redux';
 
 const mapStateToProps = state => {
   return{
